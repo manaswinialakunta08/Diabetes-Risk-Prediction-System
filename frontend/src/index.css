@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #1F2937;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1F5F9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+@layer components {
+  /* Subtle healthcare card style */
+  .health-card {
+    @apply bg-white rounded-xl border border-slate-200/80 shadow-card hover:shadow-card-hover transition-all duration-200;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-navy-mist text-navy-primary border border-navy-soft;
+  }
+
+  .badge-teal {
+    @apply bg-teal-light text-teal-dark border border-teal-accent/20;
+  }
+
+  .badge-amber {
+    @apply bg-amber-light text-amber-warning border border-amber-warning/20;
+  }
+
+  .badge-danger {
+    @apply bg-red-light text-red-danger border border-red-danger/20;
+  }
+
+  .badge-success {
+    @apply bg-emerald-light text-emerald-safe border border-emerald-safe/20;
+  }
+}

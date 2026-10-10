@@ -1,0 +1,25 @@
+{
+  "name": "diabetes-prediction-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-grade Diabetes Prediction System frontend and clinical analytics interface",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "install:all": "npm --prefix frontend install"
+  },
+  "keywords": [
+    "diabetes",
+    "prediction",
+    "healthcare",
+    "machine-learning",
+    "cdc-brfss",
+    "react",
+    "tailwind",
+    "recharts"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

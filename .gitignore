@@ -1,15 +1,32 @@
-# Python virtual environment
-ml-service/venv/
-
-# Python cache
+﻿# Python virtual environments and cache
+**/venv/
+**/.venv/
 __pycache__/
-*.pyc
+*.py[cod]
 
-# VS Code
-.vscode/
-
-# Environment variables
+# Environment files and secrets
 .env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
 
-# Jupyter
+# Frontend dependencies and builds
+**/node_modules/
+**/dist/
+
+# Raw and processed datasets
+data/raw/
+data/processed/
+**/data/raw/
+**/data/processed/
+
+# Generated model files
+*.joblib
+
+# Jupyter and VS Code
 .ipynb_checkpoints/
+.vscode/
